@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title> SrimadBhagawadGita Lab</title>
+  <title>Large Lab</title>
   <style>
     /* CSS classes to control visibility */
     body {
@@ -82,7 +82,7 @@ body {
     }
 
     #abbr {
-      display: none;
+      display:none;
     }
 
     .highlight {
@@ -125,11 +125,9 @@ body {
     }
 #input0, #input00{
 background-color: lightgrey;
+width:30%;
+}
 
-}
-#input1{
-  background-color: yellow;
-}
 /* Style the "Filter Raw Data" button */
 #filterRawDataButton {
   background-color: #3498db; /* Initial background color */
@@ -206,8 +204,20 @@ background-color: lightgrey;
 </head>
 
 <body>
+  <script>
+    //script for storing data array
+    var valuesArray = [
+{input1: "4.34", input2: "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया।<br>उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः।।", input3: "४.३४", input4: "", input5: "तद्विद्धि प्रणिपातेन ", input6: "परिप्रश्नेन सेवया।<br>", input7: "उपदेक्ष्यन्ति ते ज्ञानं ", input8: "ज्ञानिनस्तत्त्वदर्शिनः।।", input9: "४.३४<br><br>", input10: "tad viddhi praṇipātena ", input11: "paripraśnena sevayā<br> ", input12: "upadekṣyanti te jñānaṁ ", input13: "jñāninastattvadarśinaḥ.4.34<br><br>", input14: "", input15: "तद् = तपाईंको, विद्धि = जान्नुहोस्, प्रणिपातेन = समर्पण गर्दै, परिप्रश्नेन = प्रश्न गर्दै, सेवया = सेवा गर्दै, उपदेक्ष्यन्ति = सिकाउनेछन्, ते = तिमीलाई, ज्ञानं = ज्ञान, ज्ञानिनः = ज्ञानीहरू, तत्त्वदर्शिनः = तत्त्वदर्शीहरू<br><br>", input16: "तद् (tad) = that, विद्धि (viddhi) = know, प्रणिपातेन (praṇipātena) = through submission, परिप्रश्नेन (paripraśnena) = through inquiry, सेवया (sevayā) = through service, उपदेक्ष्यन्ति (upadekṣyanti) = will instruct, ते (te) = unto you, ज्ञानं (jñānaṁ) = knowledge, ज्ञानिनः (jñāninaḥ) = of those who know, तत्त्वदर्शिनः (tattva-darśinaḥ) = the seers of the truth,<br><br>",input17: "That (tad) know (viddhi) through submission (praṇipātena), through inquiry (paripraśnena), and through service (sevayā), they (te) will instruct (upadekṣyanti) you (te) in knowledge (jñānaṁ), the seers (jñāninaḥ) of the truth (tattva-darśinaḥ).<br><br>",input18: "",input19: "",input20: "Just try to learn the truth by approaching a spiritual master. Inquire from him submissively and render service unto him. The self-realized soul can impart knowledge unto you because he has seen the truth.<br><br>",input21: "",input22: "", input23: "",input24: "",input25: "", input26: "", input27: "", input28: "", input29: "", input30: "", input31: "", input32: "", input33: "", input34: "", input35: "", input36: "", input37: "", input38: "", input39: "", input40: "", input41: "", input42: "", input43: "", input44: "", input45: "", input46: "", input47: "", input48: "", input49: "", input50: "", input51: "", input52: "", input53: "", input54: "", input55: "", input56: "", input57: "", input58: "", input59: "", input60: "", input61: "", input62: "", input63: "", input64: "तद् (tad) = that, विद्धि (viddhi) = know, प्रणिपातेन (praṇipātena) = through submission, परिप्रश्नेन (paripraśnena) = through inquiry, सेवया (sevayā) = through service, उपदेक्ष्यन्ति (upadekṣyanti) = will instruct, ते (te) = unto you, ज्ञानं (jñānaṁ) = knowledge, ज्ञानिनः (jñāninaḥ) = of those who know, तत्त्वदर्शिनः (tattva-darśinaḥ) = the seers of the truth,"},
+
+
+{input1: "10.4", input2: "<br>बुद्धिर्ज्ञानमसम्मोहः क्षमा सत्यं दमः शमः। <br> सुखं दुःखं भवोऽभावो भयं चाभयमेव च।।10.4।।<br> महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा। <br>मद्भावा मानसा जाता येषां लोकिमा मामृताः।।10.5।। ", input3: " ", input4: "बुद्धिर्ज्ञानमसम्मोहः ", input5: "क्षमा सत्यं दमः शमः। <br>", input6: "सुखं दुःखं भवोऽभावो ", input7: "भयं चाभयमेव च।।10.4।।<br>", input8: "महर्षयः सप्त पूर्वे ", input9: "चत्वारो मनवस्तथा।<br> ", input10: "मद्भावा मानसा जाता ", input11: "येषां लोकिमा मामृताः।।10.5।।<br><br>", input12: "buddhir jñānam asammohaḥ kṣamā satyaṁ damaḥ śamaḥ<br> sukhaṁ duḥkhaṁ bhavo abhāvo bhayaṁ cābhayam eva ca<br>maharṣayaḥ sapta pūrve catvāro manavas tathā<br> madbhāvā mānasā jātā yeṣāṁ lokimā māmṛtāḥ<br><br>", input13: "बुद्धिः (buddhiḥ) = Intelligence, ज्ञानम् (jñānam) = Knowledge, असम्मोहः (asammohaḥ) = Freedom from delusion, क्षमा (kṣamā) = Forgiveness, सत्यम् (satyam) = Truth, दमः (damaḥ) = Control of the senses, शमः (śamaḥ) = Control of the mind, सुखं (sukhaṁ) = Happiness, दुःखं (duḥkhaṁ) = Suffering, भवः (bhavaḥ) = Birth, अभावः (abhāvaḥ) = Death, भयं (bhayaṁ) = Fear, च (ca) = And, अभयम् (abhayam) = Fearlessness, एव (eva) = Certainly, च (ca) = And, महर्षयः (maharṣayaḥ) = The great sages, सप्त (sapta) = Seven, पूर्वे (pūrve) = Former, चत्वारः (catvāraḥ) = Four, मनवः (manavaḥ) = Manus (progenitors of mankind), तथा (tathā) = Also, मद्भावाः (madbhāvāḥ) = Born of My mind, मानसाः (mānasāḥ) = Mental, जाताः (jātāḥ) = Were born, येषां (yeṣāṁ) = Whose, लोकिम् (lokim) = In the planets, आ (ā) = In, माम् (mam) = Me, अमृताः (amṛtāḥ) = Immortal<br><br>", input14: "", input15: "Intelligence, knowledge, freedom from doubt and delusion, forgiveness, truthfulness, control of the senses, control of the mind, happiness, suffering, birth, death, fear, fearlessness, and also nonviolence, equanimity, satisfaction, austerity, charity, fame, and infamy — all these various qualities of living beings are created by Me alone.<br><br>", input16: "",input17: "",input18: "",input19: "",input20: "",input21: "",input22: "", input23: "",input24: "",input25: "", input26: "", input27: "", input28: "", input29: "", input30: "", input31: "", input32: "", input33: "", input34: "", input35: "", input36: "", input37: "", input38: "", input39: "", input40: "", input41: "", input42: "", input43: "", input44: "", input45: "", input46: "", input47: "", input48: "", input49: "", input50: "", input51: "", input52: "", input53: "", input54: "", input55: "", input56: "", input57: "", input58: "", input59: "", input60: "", input61: "", input62: "", input63: "", input64: "बुद्धिः (buddhiḥ) = Intelligence, ज्ञानम् (jñānam) = Knowledge, असम्मोहः (asammohaḥ) = Freedom from delusion, क्षमा (kṣamā) = Forgiveness, सत्यम् (satyam) = Truth, दमः (damaḥ) = Control of the senses, शमः (śamaḥ) = Control of the mind, सुखं (sukhaṁ) = Happiness, दुःखं (duḥkhaṁ) = Suffering, भवः (bhavaḥ) = Birth, अभावः (abhāvaḥ) = Death, भयं (bhayaṁ) = Fear, च (ca) = And, अभयम् (abhayam) = Fearlessness, एव (eva) = Certainly, च (ca) = And, महर्षयः (maharṣayaḥ) = The great sages, सप्त (sapta) = Seven, पूर्वे (pūrve) = Former, चत्वारः (catvāraḥ) = Four, मनवः (manavaḥ) = Manus (progenitors of mankind), तथा (tathā) = Also, मद्भावाः (madbhāvāḥ) = Born of My mind, मानसाः (mānasāḥ) = Mental, जाताः (jātāḥ) = Were born, येषां (yeṣāṁ) = Whose, लोकिम् (lokim) = In the planets, आ (ā) = In, माम् (mam) = Me, अमृताः (amṛtāḥ) = Immortal "},
+    
+    // Add more values as needed
+    ];
+    var filteredValuesArray = []; // Array to store filtered data
+  </script>
   <a id="TOP"></a>
-  <h1>Srimad Bhagawad Gita</h1>
+  <h1>Large Lab</h1>
 
 <!-- Dropdown Button -->
 <div class="link-container">
@@ -231,6 +241,39 @@ background-color: lightgrey;
   </div>
 </div>
   </div>
+  <script>
+    // Scrolling specific buttons to scroll to their content
+    var showABCButton = document.getElementById('showABCButton')
+    var showAllJKLButton = document.getElementById('showAllJKLButton');
+    var showLMNButton = document.getElementById('showLMNButton');
+    var filterRawDataButton = document.getElementById('filterRawDataButton');
+    var showXYZButton = document.getElementById('showXYZButton');
+    
+    showABCButton.addEventListener('click',function(){
+    var abcContent = document.getElementById('abcOutput');
+    abcContent.scrollIntoView({behavior:'smooth'});
+  });
+    showAllJKLButton.addEventListener('click', function() {
+      var jklContent = document.getElementById('jklContainer'); // Replace with the actual ID of the JKL content
+      jklContent.scrollIntoView({ behavior: 'smooth' });
+    });
+  
+    showLMNButton.addEventListener('click', function() {
+      var lmnContent = document.getElementById('lmnContent'); // Replace with the actual ID of the LMN content
+      lmnContent.scrollIntoView({ behavior: 'smooth' });
+    });
+  
+    filterRawDataButton.addEventListener('click', function() {
+      var rawDataContent = document.getElementById('filteredRawDataContainer'); // Replace with the actual ID of the Raw Data content
+      rawDataContent.scrollIntoView({ behavior: 'smooth' });
+    });
+  
+    showXYZButton.addEventListener('click', function() {
+      var xyzContent = document.getElementById('xyzContainer'); // Replace with the actual ID of the XYZ content
+      xyzContent.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+  
 <label for="input0">Parking1:</label>
 <textarea id="input0" placeholder="Enter text for Input 0:heading"></textarea><br>
 <label for="input1">Input 1:</label>
@@ -327,15 +370,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <textarea id="filterInput" placeholder="Enter filter command here using and, or, not"></textarea><br>
   <div id="filteredRawDataContainer"></div>
   <!--content of filtered raw data is visible here-->
-  <script>
-    //script for storing data array
-    var valuesArray = [
-    {input1: "4.34", input2: "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया।<br>", input3: "उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः।।४.३४", input4: "तद्विद्धि प्रणिपातेन ", input5: "परिप्रश्नेन सेवया।<br>", input6: "उपदेक्ष्यन्ति ते ज्ञानं ", input7: "ज्ञानिनस्तत्त्वदर्शिनः।।४.३४<br><br>", input8: "tad viddhi praṇipātena  ", input9: "paripraśnena sevayā<br> ", input10: "upadekṣyanti te jñānaṁ  ", input11: "jñāninastattvadarśinaḥ.4.34<br><br>", input12: "तद् (tad) = that, विद्धि (viddhi) = know, प्रणिपातेन (praṇipātena) = through submission, परिप्रश्नेन (paripraśnena) = through inquiry, सेवया (sevayā) = through service, उपदेक्ष्यन्ति (upadekṣyanti) = will instruct, ते (te) = unto you, ज्ञानं (jñānaṁ) = knowledge, ज्ञानिनः (jñāninaḥ) = of those who know, तत्त्वदर्शिनः (tattva-darśinaḥ) = the seers of the truth,", input13: "", input14: "", input15: "", input16: "",input17: "",input18: "",input19: "",input20: "",input21: "",input22: "", input23: "",input24: "",input25: "", input26: "", input27: "", input28: "", input29: "", input30: "", input31: "", input32: "", input33: "", input34: "", input35: "", input36: "", input37: "", input38: "", input39: "", input40: "", input41: "", input42: "", input43: "", input44: "", input45: "", input46: "", input47: "", input48: "", input49: "", input50: "", input51: "", input52: "", input53: "", input54: "", input55: "", input56: "", input57: "", input58: "", input59: "", input60: "", input61: "", input62: "", input63: "", input64: "तद् (tad) = that, विद्धि (viddhi) = know, प्रणिपातेन (praṇipātena) = through submission, परिप्रश्नेन (paripraśnena) = through inquiry, सेवया (sevayā) = through service, उपदेक्ष्यन्ति (upadekṣyanti) = will instruct, ते (te) = unto you, ज्ञानं (jñānaṁ) = knowledge, ज्ञानिनः (jñāninaḥ) = of those who know, तत्त्वदर्शिनः (tattva-darśinaḥ) = the seers of the truth,"},
-    
-    // Add more values as needed
-    ];
-    var filteredValuesArray = []; // Array to store filtered data
-  </script>
+
   <script>
     //script related to jkl button
     var showAllJKLButton = document.getElementById("showAllJKLButton");
@@ -733,15 +768,15 @@ function toggleFilterRawData() {
         document.getElementById("input13").value = matchingValue.input13.replace(/</g, "<").replace(/>/g, ">");
         document.getElementById("input14").value = matchingValue.input14.replace(/</g, "<").replace(/>/g, ">");
         document.getElementById("input15").value = matchingValue.input15.replace(/</g, "<").replace(/>/g, ">");
-        document.getElementById("input16").value = matchingValue.input15.replace(/</g, "<").replace(/>/g, ">");
-        document.getElementById("input17").value = matchingValue.input15.replace(/</g, "<").replace(/>/g, ">");
-        document.getElementById("input18").value = matchingValue.input15.replace(/</g, "<").replace(/>/g, ">");
-        document.getElementById("input19").value = matchingValue.input15.replace(/</g, "<").replace(/>/g, ">");
-        document.getElementById("input20").value = matchingValue.input15.replace(/</g, "<").replace(/>/g, ">");
-        document.getElementById("input21").value = matchingValue.input15.replace(/</g, "<").replace(/>/g, ">");
-        document.getElementById("input22").value = matchingValue.input15.replace(/</g, "<").replace(/>/g, ">");
-        document.getElementById("input23").value = matchingValue.input15.replace(/</g, "<").replace(/>/g, ">");
-        document.getElementById("input24").value = matchingValue.input15.replace(/</g, "<").replace(/>/g, ">");
+        document.getElementById("input16").value = matchingValue.input16.replace(/</g, "<").replace(/>/g, ">");
+        document.getElementById("input17").value = matchingValue.input17.replace(/</g, "<").replace(/>/g, ">");
+        document.getElementById("input18").value = matchingValue.input18.replace(/</g, "<").replace(/>/g, ">");
+        document.getElementById("input19").value = matchingValue.input19.replace(/</g, "<").replace(/>/g, ">");
+        document.getElementById("input20").value = matchingValue.input20.replace(/</g, "<").replace(/>/g, ">");
+        document.getElementById("input21").value = matchingValue.input21.replace(/</g, "<").replace(/>/g, ">");
+        document.getElementById("input22").value = matchingValue.input22.replace(/</g, "<").replace(/>/g, ">");
+        document.getElementById("input23").value = matchingValue.input23.replace(/</g, "<").replace(/>/g, ">");
+        document.getElementById("input24").value = matchingValue.input24.replace(/</g, "<").replace(/>/g, ">");
         document.getElementById("input25").value = matchingValue.input25.replace(/</g, "<").replace(/>/g, ">");
         document.getElementById("input26").value = matchingValue.input26.replace(/</g, "<").replace(/>/g, ">");
         document.getElementById("input27").value = matchingValue.input27.replace(/</g, "<").replace(/>/g, ">");
@@ -1199,18 +1234,17 @@ function toggleFilterRawData() {
     }
   </script>
     <script>
-      // Function to copy the content to the clipboard
+
+
       function copyContent() {
-        var output = document.getElementById("abcOutput");
-        var textToCopy = output.textContent;
-        var textarea = document.createElement("textarea");
-        textarea.value = textToCopy;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand("copy");
-        document.body.removeChild(textarea);
-        alert("ABC Content copied to clipboard");
+        var output = document.getElementById("abcOutput").innerText;
+        navigator.clipboard.writeText(output).then(function () {
+          alert("Copied to clipboard!");
+        }).catch(function (error) {
+          console.error("Failed to copy to clipboard: ", error);
+        });
       }
+      
     </script>
   <a id="BOTTOM"></a>
   <footer>
